@@ -3,6 +3,7 @@
 const webpack = require('webpack'); // eslint-disable-line no-unused-vars
 
 module.exports = {
+  
   entry: './browser/index.js',
   output: {
     path: __dirname,

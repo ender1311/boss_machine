@@ -5,11 +5,11 @@
   "main": "server.js",
   "homepage": "https://ender1311.github.io/boss_machine/",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config ./ --config-name webpack.config.js --progress",
     "test": "cross-env PORT=8000 mocha --watch",
     "start-dev": "webpack -w & nodemon --watch server.js --watch server/",
-    "start": "node server.js",
-    "postinstall": "webpack -p",
+    "start": "nodemon --watch server.js --watch server/",
+    "postinstall": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -42,7 +42,6 @@
     "react-redux": "^5.0.6",
     "react-router": "^3.0.0",
     "redux-thunk": "^2.2.0",
-    "webpack": "^3.5.5",
-    "webpack-cli": "^4.10.0"
+    "webpack": "^3.5.5"
   }
 }
