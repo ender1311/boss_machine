@@ -1,12 +1,13 @@
 'use strict';
 
 const webpack = require('webpack'); // eslint-disable-line no-unused-vars
+const path = require('path');
 
 module.exports = {
   
   entry: './browser/index.js',
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, 'build'),
     filename: './public/js/bundle.js',
   },
   context: __dirname,
