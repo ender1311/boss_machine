@@ -25,7 +25,7 @@ export const cancelMeetings = () => {
 }
 
 export const createMeetingThunk = () => dispatch => {
-  axios.post('https://ender1311.github.io/boss_machine/api/meetings')
+  axios.post('https://ender1311.github.io/boss_machine/#/api/meetings')
   .then(res => res.data)
   .then(createdMeeting => {
     dispatch(createMeeting(createdMeeting));
@@ -34,7 +34,7 @@ export const createMeetingThunk = () => dispatch => {
 }
 
 export const cancelMeetingsThunk = () => dispatch => {
-  axios.delete('https://ender1311.github.io/boss_machine/api/meetings')
+  axios.delete('https://ender1311.github.io/boss_machine/#/api/meetings')
   .then(() => {
     dispatch(cancelMeetings());
   })
