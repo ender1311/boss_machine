@@ -1,0 +1,17 @@
+name: Start App
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  start-app:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Start App
+      run: npm run start
+      env:
+        NODE_ENV: production
