@@ -38,7 +38,7 @@ export const deleteWork = workId => {
 // Thunks
 
 export const createWorkThunk = work => dispatch => {
-  axios.post(`https://ender1311.github.io/boss_machine/#/api/minions/${work.minionId}/work`, work)
+  axios.post(`https://ender1311.github.io/boss_machine/api/minions/${work.minionId}/work`, work)
   .then(res => res.data)
   .then(createdWork => {
     dispatch(addWork(createdWork));
@@ -47,7 +47,7 @@ export const createWorkThunk = work => dispatch => {
 }
 
 export const updateWorkThunk = work => dispatch => {
-  axios.put(`https://ender1311.github.io/boss_machine/#/api/minions/${work.minionId}/work/${work.id}`, work)
+  axios.put(`https://ender1311.github.io/boss_machine/api/minions/${work.minionId}/work/${work.id}`, work)
   .then(res => res.data)
   .then(updatedWork => {
     dispatch(updateWork(updatedWork));
@@ -56,7 +56,7 @@ export const updateWorkThunk = work => dispatch => {
 }
 
 export const deleteWorkThunk = work => dispatch => {
-  axios.delete(`https://ender1311.github.io/boss_machine/#/api/minions/${work.minionId}/work/${work.id}`)
+  axios.delete(`https://ender1311.github.io/boss_machine/api/minions/${work.minionId}/work/${work.id}`)
   .then(() => {
     dispatch(deleteWork(work.id));
   })

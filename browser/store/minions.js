@@ -33,7 +33,7 @@ export const updateMinion = minion => {
 // Thunks
 
 export const createMinionThunk = minion => dispatch => {
-  axios.post('https://ender1311.github.io/boss_machine/#/api/minions', minion)
+  axios.post('https://ender1311.github.io/boss_machine/api/minions', minion)
   .then(res => res.data)
   .then(createdMinion => {
     dispatch(addMinion(createdMinion));
@@ -43,7 +43,7 @@ export const createMinionThunk = minion => dispatch => {
 }
 
 export const updateMinionThunk = minion => dispatch => {
-  axios.put(`https://ender1311.github.io/boss_machine/#/api/minions/${minion.id}`, minion)
+  axios.put(`https://ender1311.github.io/boss_machine/api/minions/${minion.id}`, minion)
   .then(res => res.data)
   .then(updatedMinion => {
     dispatch(updateMinion(updatedMinion));
@@ -53,10 +53,10 @@ export const updateMinionThunk = minion => dispatch => {
 }
 
 export const deleteMinionThunk = minionId => dispatch => {
-  axios.delete(`https://ender1311.github.io/boss_machine/#/api/minions/${minionId}`)
+  axios.delete(`https://ender1311.github.io/boss_machine/api/minions/${minionId}`)
   .then(res => res.data)
   .then(() => {
-    return axios.get(`https://ender1311.github.io/boss_machine/#/api/minions`)
+    return axios.get(`https://ender1311.github.io/boss_machine/api/minions`)
   })
   .then(res => res.data)
   .then(allMinions => {

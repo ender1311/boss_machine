@@ -5971,7 +5971,7 @@ var updateMinion = exports.updateMinion = function updateMinion(minion) {
 
 var createMinionThunk = exports.createMinionThunk = function createMinionThunk(minion) {
   return function (dispatch) {
-    _axios2.default.post('https://ender1311.github.io/boss_machine/#/api/minions', minion).then(function (res) {
+    _axios2.default.post('https://ender1311.github.io/boss_machine/api/minions', minion).then(function (res) {
       return res.data;
     }).then(function (createdMinion) {
       dispatch(addMinion(createdMinion));
@@ -5982,7 +5982,7 @@ var createMinionThunk = exports.createMinionThunk = function createMinionThunk(m
 
 var updateMinionThunk = exports.updateMinionThunk = function updateMinionThunk(minion) {
   return function (dispatch) {
-    _axios2.default.put('https://ender1311.github.io/boss_machine/#/api/minions/' + minion.id, minion).then(function (res) {
+    _axios2.default.put('https://ender1311.github.io/boss_machine/api/minions/' + minion.id, minion).then(function (res) {
       return res.data;
     }).then(function (updatedMinion) {
       dispatch(updateMinion(updatedMinion));
@@ -5993,10 +5993,10 @@ var updateMinionThunk = exports.updateMinionThunk = function updateMinionThunk(m
 
 var deleteMinionThunk = exports.deleteMinionThunk = function deleteMinionThunk(minionId) {
   return function (dispatch) {
-    _axios2.default.delete('https://ender1311.github.io/boss_machine/#/api/minions/' + minionId).then(function (res) {
+    _axios2.default.delete('https://ender1311.github.io/boss_machine/api/minions/' + minionId).then(function (res) {
       return res.data;
     }).then(function () {
-      return _axios2.default.get('https://ender1311.github.io/boss_machine/#/api/minions');
+      return _axios2.default.get('https://ender1311.github.io/boss_machine/api/minions');
     }).then(function (res) {
       return res.data;
     }).then(function (allMinions) {
@@ -6077,7 +6077,7 @@ var cancelMeetings = exports.cancelMeetings = function cancelMeetings() {
 
 var createMeetingThunk = exports.createMeetingThunk = function createMeetingThunk() {
   return function (dispatch) {
-    _axios2.default.post('https://ender1311.github.io/boss_machine/#/api/meetings').then(function (res) {
+    _axios2.default.post('https://ender1311.github.io/boss_machine/api/meetings').then(function (res) {
       return res.data;
     }).then(function (createdMeeting) {
       dispatch(createMeeting(createdMeeting));
@@ -6087,7 +6087,7 @@ var createMeetingThunk = exports.createMeetingThunk = function createMeetingThun
 
 var cancelMeetingsThunk = exports.cancelMeetingsThunk = function cancelMeetingsThunk() {
   return function (dispatch) {
-    _axios2.default.delete('https://ender1311.github.io/boss_machine/#/api/meetings').then(function () {
+    _axios2.default.delete('https://ender1311.github.io/boss_machine/api/meetings').then(function () {
       dispatch(cancelMeetings());
     }).catch(console.error.bind(console));
   };
@@ -6174,7 +6174,7 @@ var deleteWork = exports.deleteWork = function deleteWork(workId) {
 
 var createWorkThunk = exports.createWorkThunk = function createWorkThunk(work) {
   return function (dispatch) {
-    _axios2.default.post('https://ender1311.github.io/boss_machine/#/api/minions/' + work.minionId + '/work', work).then(function (res) {
+    _axios2.default.post('https://ender1311.github.io/boss_machine/api/minions/' + work.minionId + '/work', work).then(function (res) {
       return res.data;
     }).then(function (createdWork) {
       dispatch(addWork(createdWork));
@@ -6184,7 +6184,7 @@ var createWorkThunk = exports.createWorkThunk = function createWorkThunk(work) {
 
 var updateWorkThunk = exports.updateWorkThunk = function updateWorkThunk(work) {
   return function (dispatch) {
-    _axios2.default.put('https://ender1311.github.io/boss_machine/#/api/minions/' + work.minionId + '/work/' + work.id, work).then(function (res) {
+    _axios2.default.put('https://ender1311.github.io/boss_machine/api/minions/' + work.minionId + '/work/' + work.id, work).then(function (res) {
       return res.data;
     }).then(function (updatedWork) {
       dispatch(updateWork(updatedWork));
@@ -6194,7 +6194,7 @@ var updateWorkThunk = exports.updateWorkThunk = function updateWorkThunk(work) {
 
 var deleteWorkThunk = exports.deleteWorkThunk = function deleteWorkThunk(work) {
   return function (dispatch) {
-    _axios2.default.delete('https://ender1311.github.io/boss_machine/#/api/minions/' + work.minionId + '/work/' + work.id).then(function () {
+    _axios2.default.delete('https://ender1311.github.io/boss_machine/api/minions/' + work.minionId + '/work/' + work.id).then(function () {
       dispatch(deleteWork(work.id));
     }).catch(console.error.bind(console));
   };
@@ -9157,7 +9157,7 @@ var updateIdea = exports.updateIdea = function updateIdea(idea) {
 
 var createIdeaThunk = exports.createIdeaThunk = function createIdeaThunk(idea) {
   return function (dispatch) {
-    _axios2.default.post('https://ender1311.github.io/boss_machine/#/api/ideas', idea).then(function (res) {
+    _axios2.default.post('https://ender1311.github.io/boss_machine/api/ideas', idea).then(function (res) {
       return res.data;
     }).then(function (createdIdea) {
       dispatch(createIdea(createdIdea));
@@ -9167,7 +9167,7 @@ var createIdeaThunk = exports.createIdeaThunk = function createIdeaThunk(idea) {
 
 var updateIdeaThunk = exports.updateIdeaThunk = function updateIdeaThunk(idea) {
   return function (dispatch) {
-    _axios2.default.put('https://ender1311.github.io/boss_machine/#/api/ideas/' + idea.id, idea).then(function (res) {
+    _axios2.default.put('https://ender1311.github.io/boss_machine/api/ideas/' + idea.id, idea).then(function (res) {
       return res.data;
     }).then(function (updatedIdea) {
       dispatch(updateIdea(updatedIdea));
@@ -16657,7 +16657,7 @@ var _Minion2 = _interopRequireDefault(_Minion);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var appEnter = function appEnter(nextRouterState) {
-  Promise.all([_axios2.default.get('https://ender1311.github.io/boss_machine/#/api/minions'), _axios2.default.get('https://ender1311.github.io/boss_machine/#/api/ideas'), _axios2.default.get('https://ender1311.github.io/boss_machine/#/api/meetings')]).then(function (_ref) {
+  Promise.all([_axios2.default.get('https://ender1311.github.io/boss_machine/api/minions'), _axios2.default.get('https://ender1311.github.io/boss_machine/api/ideas'), _axios2.default.get('https://ender1311.github.io/boss_machine/api/meetings')]).then(function (_ref) {
     var _ref2 = _slicedToArray(_ref, 3),
         minionsResponse = _ref2[0],
         ideasResponse = _ref2[1],
@@ -16679,13 +16679,13 @@ var appEnter = function appEnter(nextRouterState) {
 var singleMinionEnter = function singleMinionEnter(nextRouterState) {
   _index2.default.dispatch((0, _appState.resetEditingState)());
   var id = nextRouterState.params.id;
-  _axios2.default.get('https://ender1311.github.io/boss_machine/#/api/minions/' + id).then(function (res) {
+  _axios2.default.get('https://ender1311.github.io/boss_machine/api/minions/' + id).then(function (res) {
     return res.data;
   }).then(function (minion) {
     _index2.default.dispatch((0, _selectedMinion.setSelectedMinion)(minion));
   }).catch(console.error.bind(console));
 
-  _axios2.default.get('https://ender1311.github.io/boss_machine/#/api/minions/' + id + '/work').then(function (res) {
+  _axios2.default.get('https://ender1311.github.io/boss_machine/api/minions/' + id + '/work').then(function (res) {
     return res.data;
   }).then(function (work) {
     _index2.default.dispatch((0, _work.setWork)(work));
@@ -16694,7 +16694,7 @@ var singleMinionEnter = function singleMinionEnter(nextRouterState) {
 
 var singleIdeaEnter = function singleIdeaEnter(nextRouterState) {
   var id = nextRouterState.params.id;
-  _axios2.default.get('https://ender1311.github.io/boss_machine/#/api/ideas/' + id).then(function (res) {
+  _axios2.default.get('https://ender1311.github.io/boss_machine/api/ideas/' + id).then(function (res) {
     return res.data;
   }).then(function (idea) {
     _index2.default.dispatch((0, _selectedIdea.setSelectedIdea)(idea));
