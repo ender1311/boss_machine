@@ -11,4 +11,4 @@ jobs:
 
     steps:
     - name: Start App
-      run: npm run start
+      run: node server.js
