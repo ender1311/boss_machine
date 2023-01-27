@@ -1,4 +1,4 @@
-name: Start App
+name: Mastermind Manager
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Start App
+    - name: Mastermind Manager
       run: npm run start
       env:
         NODE_ENV: production
