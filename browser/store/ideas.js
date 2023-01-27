@@ -32,7 +32,7 @@ export const updateIdea = idea => {
 // Thunks
 
 export const createIdeaThunk = idea => dispatch => {
-  axios.post('http://localhost:4001/api/ideas', idea)
+  axios.post('https://ender1311.github.io/boss_machine/api/ideas', idea)
   .then(res => res.data)
   .then(createdIdea => {
     dispatch(createIdea(createdIdea));
@@ -41,7 +41,7 @@ export const createIdeaThunk = idea => dispatch => {
 }
 
 export const updateIdeaThunk = idea => dispatch => {
-  axios.put(`http://localhost:4001/api/ideas/${idea.id}`, idea)
+  axios.put(`https://ender1311.github.io/boss_machine/api/ideas/${idea.id}`, idea)
   .then(res => res.data)
   .then(updatedIdea => {
     dispatch(updateIdea(updatedIdea));
