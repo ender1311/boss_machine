@@ -32080,7 +32080,7 @@ var AllMinions = function AllMinions(props) {
       _react2.default.createElement(
         _reactRouter.Link,
         { to: '/minions/' + minion.id },
-        _react2.default.createElement('img', { className: 'button minion-thumbnail', src: 'public/img/' + minion.id + '.png', alt: 'minion' }),
+        _react2.default.createElement('img', { className: 'button minion-thumbnail', src: 'public/img/minion.svg', alt: 'minion' }),
         _react2.default.createElement(
           'p',
           null,
