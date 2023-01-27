@@ -65,7 +65,7 @@ const createIdea = () => {
 let meetingIdCounter = 1;
 
 const createMeeting = () => {
-  const options = [`Discussion about`, `Meeting for`, `Brainstorm`];
+  const options = [`Discussion about`, `Meeting for`, `Brainstorm`, `Competition for`, `Session for`, `Analyze`, `Plan for`, `Dream about`, `Strategize about`, `Game plan for`, `Arrange for`, `Propose`, `Game plan`, `Send funds for`, `Deal with`];
   const option = options[Math.floor(Math.random() * options.length)];
   const date = new Date(faker.date.future());
   return {
