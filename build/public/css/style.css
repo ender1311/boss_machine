@@ -26,13 +26,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45px;
+  
   margin-top: 23px;
 }
 
 #logo-img {
-  height: 24px;
-  width: 24px;
+  height: 80px;
 }
 
 #title {
@@ -79,7 +78,7 @@ a {
 
 .launch-icon {
   height: 67px;
-  width: 150px;
+  width: 130px;
 }
 
 .label {
@@ -138,7 +137,7 @@ a {
 
   .launch-icon {
     height: 120px;
-    width: 120px;
+    width: 220px;
   }
 
   .launch-label {

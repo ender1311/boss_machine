@@ -32027,7 +32027,7 @@ var Heading = function Heading() {
       _react2.default.createElement(
         _reactRouter.Link,
         { to: '/' },
-        _react2.default.createElement('img', { id: 'logo-img', className: 'button', src: 'public/img/logo.svg', alt: 'logo' })
+        _react2.default.createElement('img', { id: 'logo-img', className: 'button', src: 'public/img/minion_face.png', alt: 'logo' })
       )
     ),
     _react2.default.createElement(
@@ -32039,7 +32039,7 @@ var Heading = function Heading() {
         _react2.default.createElement(
           'span',
           { className: 'button' },
-          'Boss Machine'
+          'Minion Manager'
         )
       )
     )
@@ -32196,11 +32196,11 @@ var Home = function Home(_ref) {
         _react2.default.createElement(
           'div',
           { id: 'minions-launch', className: 'button launch-button' },
-          _react2.default.createElement('img', { className: 'button launch-icon', src: 'public/img/minion_icon_home.svg', alt: '' }),
+          _react2.default.createElement('img', { className: 'button launch-icon', src: 'public/img/81aWNRsH89L._AC_SL1500_.jpg', alt: '' }),
           _react2.default.createElement(
             'div',
             { className: 'button label launch-label' },
-            'MINIONS.exe'
+            'Minions Database'
           )
         )
       ),
@@ -32210,11 +32210,11 @@ var Home = function Home(_ref) {
         _react2.default.createElement(
           'div',
           { id: 'ideas-launch', className: 'button launch-button' },
-          _react2.default.createElement('img', { className: 'button launch-icon', src: 'public/img/minion_icon_money.svg', alt: '' }),
+          _react2.default.createElement('img', { className: 'button launch-icon', src: 'public/img/minions-rise-of-gru.webp', alt: '' }),
           _react2.default.createElement(
             'div',
             { className: 'button label launch-label' },
-            'MILLION $ IDEAS.exe'
+            'Million Dollar Ideas'
           )
         )
       )

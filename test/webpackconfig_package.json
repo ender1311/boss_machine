@@ -13,7 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "author": "Codecademy",
+  "author": "Dan Luk",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",

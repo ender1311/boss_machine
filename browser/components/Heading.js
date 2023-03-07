@@ -7,12 +7,12 @@ const Heading = () => {
       
         <div id="logo">
           <Link to="/">
-            <img id="logo-img" className="button" src="public/img/logo.svg" alt="logo" />
+            <img id="logo-img" className="button" src="public/img/minion_face.png" alt="logo"/>
           </Link>
         </div>
         <div id="title">
           <Link to="/">
-            <span className="button">Boss Machine</span>
+            <span className="button">Minion Manager</span>
           </Link>
         </div>
     </div>
