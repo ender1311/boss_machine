@@ -13,7 +13,7 @@ module.exports = {
   context: __dirname,
   devtool: 'source-map',
   module: {
-    loaders: [
+    rules: [
       {
         test: /jsx?$/,
         exclude: /(node_modules|bower_components)/,
