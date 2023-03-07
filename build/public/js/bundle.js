@@ -32108,7 +32108,7 @@ var AllMinions = function AllMinions(props) {
       _react2.default.createElement(
         'div',
         { id: 'minions-title', className: 'label minions-label' },
-        'MINIONS.exe'
+        'Workers'
       ),
       _react2.default.createElement(
         'div',

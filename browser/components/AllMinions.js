@@ -22,7 +22,7 @@ const AllMinions = props => {
   return (
     <div>
       <div id="minions-landing">
-        <div id="minions-title" className="label minions-label">MINIONS.exe</div>
+        <div id="minions-title" className="label minions-label">Workers</div>
         <div id="all-minions">
           { minions }
           <div id="add-minion-button-grid" className="minion-grid">
