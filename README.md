@@ -1,4 +1,4 @@
-# Boss Machine
+# Minion Manager
 
 ## Project Overview
 
